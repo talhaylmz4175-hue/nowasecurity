@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
+    <title>NOVA Security</title>
+</head>
+<body style="background-image: url(Resimler/anasayfabackround.png);">
+
+    <div class="container">
+        <div class="navbar" style="background-color: rgba(1, 41, 87, 0.95)">
+            <div class="logo">
+                <img class="analogo" src="Resimler/analogo.png" width="200px" alt="analogo">
+            </div>
+            <ul >
+                <li ><a href="index.html" class="active">Ana Menu</a></li>
+                <li class="dropdown">
+                <a href="#">Takımlar</a>
+                  <ul class="dropdown-menu">
+                    <li ><a  class="kirmizi" href="kirmiziTakim.HTML">Kırmızı Takım</a></li>
+                    <li ><a class="mavitakim" href="takimlarMavi.HTML">Mavi Takım</a></li>
+                 </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">Şapkalar</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="siyah" href="siyahSapka.HTML">Siyah Şapka</a></li>
+                    <li><a class="beyaz" href="beyazSapka.HTML">Beyaz Şapka</a></li>
+                 </ul>
+                </li>
+                
+                <li><a href="iletisim.HTML">İletişim</a></li>
+                 <li><a href="Filmler.HTML">Filmler</a></li>
+            </ul>
+        </div>
+
+        <div class="icerik-iletisim">
+           <form class="contact-form">
+                <input type="text" placeholder="Ad Soyad" required>
+                <input type="email" placeholder="E-posta" required>
+                <input type="tel" placeholder="Telefon (İsteğe bağlı)">
+    
+                <select required>
+                    <option disabled selected>Konu seçin</option>
+                    <option>Genel Soru</option>
+                    <option>Geri Bildirim</option>
+                    <option>İşbirliği</option>
+                    <option>Teknik Destek</option>
+                </select>
+
+                <textarea placeholder="Mesajınız..." rows="5" required></textarea>
+
+                <label>
+                    <input class="chechbox" type="checkbox" required>
+                    Gizlilik politikasını kabul ediyorum
+                </label>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        
+    </div>
